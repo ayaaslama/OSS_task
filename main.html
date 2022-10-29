@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Task</title>
+
+</head>
+
+<body>
+    <script>
+        var str = prompt("Please enter a string: ");
+        var result = 0;
+        var str_len = str.length - 1;
+        while (str_len >= 0) {
+            result += str.toLowerCase().charCodeAt(str_len) - 96;
+            str_len--;
+        }
+
+        alert(result);
+    </script>
+
+</body>
+
+</html>

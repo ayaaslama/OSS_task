@@ -67,8 +67,8 @@ public class Staff : Person
     {        
     if(salary<=0||salary>120000){throw new Exception("Invalid Salary");}
     if(joinyear<21){throw new Exception("Invalid JoinYear");}
-        _salary = Salary;
-        _joinyear = JoinYear;
+        _salary = salary;
+        _joinyear = joinyear;
     }
     public double GetSalary() =>_salary;
     public int GetJoinYear() => _joinyear;
